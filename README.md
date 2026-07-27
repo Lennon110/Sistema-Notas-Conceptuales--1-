@@ -128,9 +128,8 @@ El proyecto incluye un `Dockerfile` multi-stage que compila el código TypeScrip
 ### 1. Construir la Imagen Docker
 
 ```bash
-docker build -t TU_USUARIO_DOCKERHUB/sistema-notas-conceptuales:1.0 .
+docker build -t lennon210/sistema-notas-conceptuales:1.0 .
 ```
-*(Reemplaza `TU_USUARIO_DOCKERHUB` por tu nombre de usuario en Docker Hub)*.
 
 ### 2. Probar la Imagen Localmente
 
@@ -139,7 +138,7 @@ docker run -d \
   --name sistema-notas \
   -p 8080:80 \
   --restart unless-stopped \
-  TU_USUARIO_DOCKERHUB/sistema-notas-conceptuales:1.0
+  lennon210/sistema-notas-conceptuales:1.0
 ```
 
 Accede desde tu navegador web a: `http://localhost:8080`
@@ -153,7 +152,7 @@ Para hacer disponible la imagen en cualquier servidor o máquina remota:
 docker login
 
 # Publicar la imagen etiquetada
-docker push TU_USUARIO_DOCKERHUB/sistema-notas-conceptuales:1.0
+docker push lennon210/sistema-notas-conceptuales:1.0
 ```
 
 ### 4. Descargar y Ejecutar en Cualquier Otra Máquina
@@ -162,14 +161,14 @@ En cualquier servidor o equipo con Docker instalado (sin necesidad de tener Node
 
 ```bash
 # Descargar la imagen desde Docker Hub
-docker pull TU_USUARIO_DOCKERHUB/sistema-notas-conceptuales:1.0
+docker pull lennon210/sistema-notas-conceptuales:1.0
 
 # Ejecutar el contenedor
 docker run -d \
   --name sistema-notas \
   -p 8080:80 \
   --restart unless-stopped \
-  TU_USUARIO_DOCKERHUB/sistema-notas-conceptuales:1.0
+  lennon210/sistema-notas-conceptuales:1.0
 ```
 
 ### Comandos Útiles de Gestión Docker
