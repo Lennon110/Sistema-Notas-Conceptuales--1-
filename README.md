@@ -134,11 +134,7 @@ docker build -t lennon210/sistema-notas-conceptuales:1.0 .
 ### 2. Probar la Imagen Localmente
 
 ```bash
-docker run -d \
-  --name sistema-notas \
-  -p 8080:80 \
-  --restart unless-stopped \
-  lennon210/sistema-notas-conceptuales:1.0
+docker run -d --name sistema-notas -p 8080:80 lennon210/sistema-notas-conceptuales:1.0
 ```
 
 Accede desde tu navegador web a: `http://localhost:8080`
@@ -164,11 +160,7 @@ En cualquier servidor o equipo con Docker instalado (sin necesidad de tener Node
 docker pull lennon210/sistema-notas-conceptuales:1.0
 
 # Ejecutar el contenedor
-docker run -d \
-  --name sistema-notas \
-  -p 8080:80 \
-  --restart unless-stopped \
-  lennon210/sistema-notas-conceptuales:1.0
+docker run -d --name sistema-notas -p 8080:80 lennon210/sistema-notas-conceptuales:1.0
 ```
 
 ### Comandos Útiles de Gestión Docker
