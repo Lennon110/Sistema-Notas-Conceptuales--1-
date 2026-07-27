@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Colores institucionales de la ESPE (paleta oficial: verde y oro) */
+  --color-primario: #005930;
+  --color-primario-claro: #008244;
+  --color-primario-oscuro: #003B1E;
+  --color-dorado: #D9A414;
+  --color-dorado-claro: #F5C53D;
+  --color-verde-oliva: #005930;
+
+  --color-fondo: #f4f7f5;
+  --color-superficie: #ffffff;
+  --color-borde: #e2e8f0;
+  --color-texto: #1e293b;
+  --color-texto-suave: #64748b;
+
+  --color-exito: #10b981;
+  --color-exito-fondo: #ecfdf5;
+  --color-error: #ef4444;
+  --color-error-fondo: #fef2f2;
+  --color-advertencia: #f59e0b;
+  --color-advertencia-fondo: #fffbeb;
+  --color-info: #0ea5e9;
+  --color-info-fondo: #f0f9ff;
+
+  --radio-sm: 8px;
+  --radio-md: 12px;
+  --radio-lg: 20px;
+
+  --sombra-sm: 0 1px 3px rgba(0, 89, 48, 0.05);
+  --sombra-md: 0 4px 20px rgba(0, 89, 48, 0.08);
+  --sombra-lg: 0 10px 30px rgba(0, 89, 48, 0.12);
+
+  --espaciado-xs: 4px;
+  --espaciado-sm: 8px;
+  --espaciado-md: 16px;
+  --espaciado-lg: 24px;
+  --espaciado-xl: 32px;
+
+  --fuente-base: "Outfit", "Segoe UI", Roboto, sans-serif;
+
+  --transicion-rapida: 0.15s ease;
+  --transicion-normal: 0.25s ease;
+}
+
